@@ -1,0 +1,133 @@
+html, body {
+    font-family: "sans-serif";
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+@keyframes portraitAnimation {
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+    25% {
+        transform: scale(1.1) rotate(-5deg);
+    }
+    50% {
+        transform: scale(1) rotate(0deg);
+    }
+    75% {
+        transform: scale(1.1) rotate(5deg);
+    }
+    100% {
+        transform: scale(1) rotate(0deg);
+    }
+}
+
+header img:hover {
+    animation: portraitAnimation 1s ease infinite;
+}
+
+header {
+    background-color: #FF6B6B;
+    padding: 30px;
+    text-align: center;
+    transition: background-color 0.5s;
+    background: linear-gradient(to right, #FF6B6B, #FF8F7A);
+    background-size: 200% 100%;
+    animation: gradientAnimation 5s infinite;
+}
+
+header img {
+    border-radius: 50%;
+    width: 300px;
+    border: 10px solid #F2F5CA;
+    transition: box-shadow 0.5s;
+}
+
+header:hover {
+    background-color: #FF8F7A;
+}
+
+header img:hover {
+    box-shadow: 0 0 20px 5px #FF3C01;
+}
+
+header h1 {
+    font-size: 50px;
+    color: #F2F5CA;
+    transition: color 0.5s, text-shadow 0.5s;
+}
+
+header h1:hover {
+    color: #F2F5CA;
+    text-shadow: 0 0 10px #FF0000;
+}
+
+.content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+img.big-image {
+    max-width: 100%;
+    transition: box-shadow 0.5s;
+}
+
+img.big-image:hover {
+    box-shadow: 0 0 20px 5px #5EEEFC;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 100% 0;
+    }
+    100% {
+        background-position: -100% 0;
+    }
+}
+
+p.caption {
+    font-size: 16px;
+    color: #F2F5CA;
+    font-style: italic;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: #0047AB;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+a:hover {
+    color: #FF0000;
+    transform: translateX(5px);
+}
+
+footer {
+    margin-top: 20px;
+    padding: 40px 20px;
+    background-color: #eb7b67;
+}
+
+footer ul {
+    text-align: center;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+
+audio {
+    width: 150%; 
+    max-width: 150px; 
+}
