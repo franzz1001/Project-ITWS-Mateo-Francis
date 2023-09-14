@@ -52,7 +52,7 @@ header {
 header img {
     border-radius: 50%;
     width: 150px;
-    border: 5px solid #526d83;
+    border: 5px solid #7fa7c7;
     transition: box-shadow 0.5s, transform 0.5s;
 }
 
